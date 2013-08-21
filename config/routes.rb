@@ -1,4 +1,13 @@
 GalaxyWars::Application.routes.draw do
+  resources :moons
+
+
+  resources :planets
+
+
+  resources :stars
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

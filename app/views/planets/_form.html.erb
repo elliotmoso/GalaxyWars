@@ -1,0 +1,93 @@
+<%= form_for(@planet) do |f| %>
+  <% if @planet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@planet.errors.count, "error") %> prohibited this planet from being saved:</h2>
+
+      <ul>
+      <% @planet.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :star_id %><br />
+    <%= f.number_field :star_id %>
+  </div>
+  <div class="field">
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :mass %><br />
+    <%= f.text_field :mass %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.number_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :atmosphere %><br />
+    <%= f.number_field :atmosphere %>
+  </div>
+  <div class="field">
+    <%= f.label :metal %><br />
+    <%= f.number_field :metal %>
+  </div>
+  <div class="field">
+    <%= f.label :water %><br />
+    <%= f.number_field :water %>
+  </div>
+  <div class="field">
+    <%= f.label :amoniate %><br />
+    <%= f.number_field :amoniate %>
+  </div>
+  <div class="field">
+    <%= f.label :carbone %><br />
+    <%= f.number_field :carbone %>
+  </div>
+  <div class="field">
+    <%= f.label :n_p %><br />
+    <%= f.number_field :n_p %>
+  </div>
+  <div class="field">
+    <%= f.label :fissionable_material %><br />
+    <%= f.number_field :fissionable_material %>
+  </div>
+  <div class="field">
+    <%= f.label :mediumtemp %><br />
+    <%= f.number_field :mediumtemp %>
+  </div>
+  <div class="field">
+    <%= f.label :alliance_id %><br />
+    <%= f.number_field :alliance_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :organicA %><br />
+    <%= f.number_field :organicA %>
+  </div>
+  <div class="field">
+    <%= f.label :organicB %><br />
+    <%= f.number_field :organicB %>
+  </div>
+  <div class="field">
+    <%= f.label :organicC %><br />
+    <%= f.number_field :organicC %>
+  </div>
+  <div class="field">
+    <%= f.label :metal_cristal %><br />
+    <%= f.number_field :metal_cristal %>
+  </div>
+  <div class="field">
+    <%= f.label :habitables %><br />
+    <%= f.number_field :habitables %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,85 @@
+<%= form_for(@star) do |f| %>
+  <% if @star.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@star.errors.count, "error") %> prohibited this star from being saved:</h2>
+
+      <ul>
+      <% @star.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :x %><br />
+    <%= f.number_field :x %>
+  </div>
+  <div class="field">
+    <%= f.label :y %><br />
+    <%= f.number_field :y %>
+  </div>
+  <div class="field">
+    <%= f.label :z %><br />
+    <%= f.number_field :z %>
+  </div>
+  <div class="field">
+    <%= f.label :mass %><br />
+    <%= f.text_field :mass %>
+  </div>
+  <div class="field">
+    <%= f.label :radium %><br />
+    <%= f.text_field :radium %>
+  </div>
+  <div class="field">
+    <%= f.label :luminosity %><br />
+    <%= f.text_field :luminosity %>
+  </div>
+  <div class="field">
+    <%= f.label :temp %><br />
+    <%= f.number_field :temp %>
+  </div>
+  <div class="field">
+    <%= f.label :color %><br />
+    <%= f.number_field :color %>
+  </div>
+  <div class="field">
+    <%= f.label :clase %><br />
+    <%= f.text_field :clase %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :aliance_id %><br />
+    <%= f.number_field :aliance_id %>
+  </div>
+  <div class="field">
+    <%= f.label :near %><br />
+    <%= f.text_area :near %>
+  </div>
+  <div class="field">
+    <%= f.label :intern_line %><br />
+    <%= f.text_field :intern_line %>
+  </div>
+  <div class="field">
+    <%= f.label :hot_line %><br />
+    <%= f.text_field :hot_line %>
+  </div>
+  <div class="field">
+    <%= f.label :snow_line %><br />
+    <%= f.text_field :snow_line %>
+  </div>
+  <div class="field">
+    <%= f.label :cool_line %><br />
+    <%= f.text_field :cool_line %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

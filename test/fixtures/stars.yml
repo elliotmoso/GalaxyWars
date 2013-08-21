@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  x: 1
+  'y': 1
+  z: 1
+  mass: 1.5
+  radium: 9.99
+  luminosity: 9.99
+  temp: 1
+  color: 1
+  clase: MyString
+  user_id: 1
+  aliance_id: 1
+  near: MyText
+  intern_line: 9.99
+  hot_line: 9.99
+  snow_line: 9.99
+  cool_line: 9.99
+
+two:
+  name: MyString
+  x: 1
+  'y': 1
+  z: 1
+  mass: 1.5
+  radium: 9.99
+  luminosity: 9.99
+  temp: 1
+  color: 1
+  clase: MyString
+  user_id: 1
+  aliance_id: 1
+  near: MyText
+  intern_line: 9.99
+  hot_line: 9.99
+  snow_line: 9.99
+  cool_line: 9.99

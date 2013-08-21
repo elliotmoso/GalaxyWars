@@ -1,0 +1,59 @@
+<h1>Listing planets</h1>
+
+<table>
+  <tr>
+    <th>Star</th>
+    <th>Position</th>
+    <th>Mass</th>
+    <th>Type</th>
+    <th>Atmosphere</th>
+    <th>Metal</th>
+    <th>Water</th>
+    <th>Amoniate</th>
+    <th>Carbone</th>
+    <th>N p</th>
+    <th>Fissionable material</th>
+    <th>Mediumtemp</th>
+    <th>Alliance</th>
+    <th>User</th>
+    <th>Organica</th>
+    <th>Organicb</th>
+    <th>Organicc</th>
+    <th>Metal cristal</th>
+    <th>Habitables</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @planets.each do |planet| %>
+  <tr>
+    <td><%= planet.star_id %></td>
+    <td><%= planet.position %></td>
+    <td><%= planet.mass %></td>
+    <td><%= planet.type %></td>
+    <td><%= planet.atmosphere %></td>
+    <td><%= planet.metal %></td>
+    <td><%= planet.water %></td>
+    <td><%= planet.amoniate %></td>
+    <td><%= planet.carbone %></td>
+    <td><%= planet.n_p %></td>
+    <td><%= planet.fissionable_material %></td>
+    <td><%= planet.mediumtemp %></td>
+    <td><%= planet.alliance_id %></td>
+    <td><%= planet.user_id %></td>
+    <td><%= planet.organicA %></td>
+    <td><%= planet.organicB %></td>
+    <td><%= planet.organicC %></td>
+    <td><%= planet.metal_cristal %></td>
+    <td><%= planet.habitables %></td>
+    <td><%= link_to 'Show', planet %></td>
+    <td><%= link_to 'Edit', edit_planet_path(planet) %></td>
+    <td><%= link_to 'Destroy', planet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Planet', new_planet_path %>

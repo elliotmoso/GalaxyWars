@@ -1,0 +1,59 @@
+<h1>Listing moons</h1>
+
+<table>
+  <tr>
+    <th>Star</th>
+    <th>Position</th>
+    <th>Mass</th>
+    <th>Type</th>
+    <th>Atmosphere</th>
+    <th>Metal</th>
+    <th>Water</th>
+    <th>Amoniate</th>
+    <th>Carbone</th>
+    <th>N p</th>
+    <th>Fissionable material</th>
+    <th>Mediumtemp</th>
+    <th>Aliance</th>
+    <th>User</th>
+    <th>Organica</th>
+    <th>Organicb</th>
+    <th>Organicc</th>
+    <th>Metal cristal</th>
+    <th>Habitables</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @moons.each do |moon| %>
+  <tr>
+    <td><%= moon.star_id %></td>
+    <td><%= moon.position %></td>
+    <td><%= moon.mass %></td>
+    <td><%= moon.type %></td>
+    <td><%= moon.atmosphere %></td>
+    <td><%= moon.metal %></td>
+    <td><%= moon.water %></td>
+    <td><%= moon.amoniate %></td>
+    <td><%= moon.carbone %></td>
+    <td><%= moon.n_p %></td>
+    <td><%= moon.fissionable_material %></td>
+    <td><%= moon.mediumtemp %></td>
+    <td><%= moon.aliance_id %></td>
+    <td><%= moon.user_id %></td>
+    <td><%= moon.organicA %></td>
+    <td><%= moon.organicB %></td>
+    <td><%= moon.organicC %></td>
+    <td><%= moon.metal_cristal %></td>
+    <td><%= moon.habitables %></td>
+    <td><%= link_to 'Show', moon %></td>
+    <td><%= link_to 'Edit', edit_moon_path(moon) %></td>
+    <td><%= link_to 'Destroy', moon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Moon', new_moon_path %>
