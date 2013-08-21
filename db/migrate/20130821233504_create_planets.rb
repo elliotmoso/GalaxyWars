@@ -1,7 +1,7 @@
-class CreateMoons < ActiveRecord::Migration
+class CreatePlanets < ActiveRecord::Migration
   def change
-    create_table :moons do |t|
-      t.belongs_to :planet
+    create_table :planets do |t|
+      t.references :star
       t.decimal :position
       t.decimal :mass
       t.integer :type
@@ -13,8 +13,8 @@ class CreateMoons < ActiveRecord::Migration
       t.integer :n_p
       t.integer :fissionable_material
       t.integer :mediumtemp
-      t.belongs_to :aliance
-      t.belongs_to :user
+      t.references :alliance
+      t.references :user
       t.integer :organicA
       t.integer :organicB
       t.integer :organicC
@@ -23,5 +23,8 @@ class CreateMoons < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :planets, :star_id
+    add_index :planets, :alliance_id
+    add_index :planets, :user_id
   end
 end

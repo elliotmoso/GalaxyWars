@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Star</th>
+    <th>Planet</th>
     <th>Position</th>
     <th>Mass</th>
     <th>Type</th>
@@ -14,7 +14,7 @@
     <th>N p</th>
     <th>Fissionable material</th>
     <th>Mediumtemp</th>
-    <th>Aliance</th>
+    <th>Alliance</th>
     <th>User</th>
     <th>Organica</th>
     <th>Organicb</th>
@@ -28,7 +28,7 @@
 
 <% @moons.each do |moon| %>
   <tr>
-    <td><%= moon.star_id %></td>
+    <td><%= moon.planet %></td>
     <td><%= moon.position %></td>
     <td><%= moon.mass %></td>
     <td><%= moon.type %></td>
@@ -40,8 +40,8 @@
     <td><%= moon.n_p %></td>
     <td><%= moon.fissionable_material %></td>
     <td><%= moon.mediumtemp %></td>
-    <td><%= moon.aliance_id %></td>
-    <td><%= moon.user_id %></td>
+    <td><%= moon.alliance %></td>
+    <td><%= moon.user %></td>
     <td><%= moon.organicA %></td>
     <td><%= moon.organicB %></td>
     <td><%= moon.organicC %></td>

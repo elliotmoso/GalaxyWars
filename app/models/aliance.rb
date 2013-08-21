@@ -1,3 +1,3 @@
 class Aliance < ActiveRecord::Base
-  attr_accessible :name, :password
+  attr_accessible :name
 end

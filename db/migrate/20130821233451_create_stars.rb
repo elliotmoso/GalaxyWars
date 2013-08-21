@@ -11,8 +11,8 @@ class CreateStars < ActiveRecord::Migration
       t.integer :temp
       t.integer :color
       t.string :clase
-      t.belongs_to :user
-      t.belongs_to :aliance
+      t.references :aliance
+      t.references :user
       t.text :near
       t.decimal :intern_line
       t.decimal :hot_line
@@ -21,5 +21,7 @@ class CreateStars < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :stars, :aliance_id
+    add_index :stars, :user_id
   end
 end
