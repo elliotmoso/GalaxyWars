@@ -1,4 +1,0 @@
-class Star < ActiveRecord::Base
-  attr_accessible :aliance_id, :clase, :color, :cool_line, :hot_line, :intern_line, :luminosity, :mass, :name, :near, :radium, :snow_line, :temp, :user_id, :x, :y, :z
-has_many :planets
-end

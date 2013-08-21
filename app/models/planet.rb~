@@ -1,5 +1,0 @@
-class Planet < ActiveRecord::Base
-  attr_accessible :alliance_id, :amoniate, :atmosphere, :carbone, :fissionable_material, :habitables, :mass, :mediumtemp, :metal, :metal_cristal, :n_p, :organicA, :organicB, :organicC, :position, :star_id, :type, :user_id, :water
-belongs_to :star
-has_many :moons
-end

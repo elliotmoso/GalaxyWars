@@ -1,4 +1,0 @@
-class Moon < ActiveRecord::Base
-  attr_accessible :aliance_id, :amoniate, :atmosphere, :carbone, :fissionable_material, :habitables, :mass, :mediumtemp, :metal, :metal_cristal, :n_p, :organicA, :organicB, :organicC, :position, :star_id, :type, :user_id, :water
-belongs_to :planet
-end
