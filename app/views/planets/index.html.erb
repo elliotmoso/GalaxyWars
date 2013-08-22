@@ -14,7 +14,7 @@
     <th>N p</th>
     <th>Fissionable material</th>
     <th>Mediumtemp</th>
-    <th>Alliance</th>
+    <th>Aliance</th>
     <th>User</th>
     <th>Organica</th>
     <th>Organicb</th>
@@ -28,10 +28,10 @@
 
 <% @planets.each do |planet| %>
   <tr>
-    <td><%= planet.star %></td>
+    <td><%= link_to planet.star.name , planet.star %></td>
     <td><%= planet.position %></td>
     <td><%= planet.mass %></td>
-    <td><%= planet.type %></td>
+    <td><%= planet.tipo %></td>
     <td><%= planet.atmosphere %></td>
     <td><%= planet.metal %></td>
     <td><%= planet.water %></td>
@@ -40,7 +40,7 @@
     <td><%= planet.n_p %></td>
     <td><%= planet.fissionable_material %></td>
     <td><%= planet.mediumtemp %></td>
-    <td><%= planet.alliance %></td>
+    <td><%= planet.aliance %></td>
     <td><%= planet.user %></td>
     <td><%= planet.organicA %></td>
     <td><%= planet.organicB %></td>

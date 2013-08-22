@@ -28,10 +28,10 @@
 
 <% @moons.each do |moon| %>
   <tr>
-    <td><%= moon.planet %></td>
+    <td><%= link_to moon.planet,moon_planet %></td>
     <td><%= moon.position %></td>
     <td><%= moon.mass %></td>
-    <td><%= moon.type %></td>
+    <td><%= moon.tipo %></td>
     <td><%= moon.atmosphere %></td>
     <td><%= moon.metal %></td>
     <td><%= moon.water %></td>
@@ -40,7 +40,7 @@
     <td><%= moon.n_p %></td>
     <td><%= moon.fissionable_material %></td>
     <td><%= moon.mediumtemp %></td>
-    <td><%= moon.alliance %></td>
+    <td><%= moon.aliance %></td>
     <td><%= moon.user %></td>
     <td><%= moon.organicA %></td>
     <td><%= moon.organicB %></td>

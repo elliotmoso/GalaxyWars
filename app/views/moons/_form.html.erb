@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :planet %><br />
-    <%= f.text_field :planet %>
+    <%= f.collection_select :planet_id, Planet.all, :id, :id  %>
   </div>
   <div class="field">
     <%= f.label :position %><br />
@@ -24,8 +24,8 @@
     <%= f.text_field :mass %>
   </div>
   <div class="field">
-    <%= f.label :type %><br />
-    <%= f.number_field :type %>
+    <%= f.label :tipo %><br />
+    <%= f.number_field :tipo %>
   </div>
   <div class="field">
     <%= f.label :atmosphere %><br />
@@ -60,8 +60,8 @@
     <%= f.number_field :mediumtemp %>
   </div>
   <div class="field">
-    <%= f.label :alliance %><br />
-    <%= f.text_field :alliance %>
+    <%= f.label :aliance %><br />
+    <%= f.text_field :aliance %>
   </div>
   <div class="field">
     <%= f.label :user %><br />

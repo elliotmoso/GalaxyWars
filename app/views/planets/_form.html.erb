@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :star %><br />
-    <%= f.text_field :star %>
+    <%= f.collection_select :star_id, Star.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :position %><br />
@@ -24,8 +24,8 @@
     <%= f.text_field :mass %>
   </div>
   <div class="field">
-    <%= f.label :type %><br />
-    <%= f.number_field :type %>
+    <%= f.label :tipo %><br />
+    <%= f.number_field :tipo %>
   </div>
   <div class="field">
     <%= f.label :atmosphere %><br />
@@ -60,12 +60,12 @@
     <%= f.number_field :mediumtemp %>
   </div>
   <div class="field">
-    <%= f.label :alliance %><br />
-    <%= f.text_field :alliance %>
+    <%= f.label :aliance %><br />
+    <%= f.collection_select :aliance_id, Aliance.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :user %><br />
-    <%= f.text_field :user %>
+    <%= f.collection_select :user_id, User.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :organicA %><br />

@@ -11,6 +11,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'database_cleaner'
+  gem 'nyan-cat-formatter'
   gem 'capybara'
   gem 'launchy'
   gem 'rspec-rails'

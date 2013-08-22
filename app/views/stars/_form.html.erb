@@ -53,11 +53,11 @@
   </div>
   <div class="field">
     <%= f.label :aliance %><br />
-    <%= f.text_field :aliance %>
+    <%= f.collection_select :aliance_id, Aliance.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :user %><br />
-    <%= f.text_field :user %>
+    <%= f.collection_select :user_id, User.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :near %><br />
