@@ -26,7 +26,6 @@ class StarsController < ApplicationController
     @star.near.scan(/(\d+),(\d+)/).each do |nearstar|
         @nearstars.push({'star'=>Star.find(nearstar[0]),'distance'=>nearstar[1]})
     end
-    debugger
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @nearstars }
