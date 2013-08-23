@@ -6,6 +6,7 @@ GalaxyWars::Application.routes.draw do
 
 
   resources :stars
+      match ':stars/:id/near' =>'stars#near'
 
 
   # The priority is based upon order of creation:
