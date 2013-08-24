@@ -9,7 +9,7 @@ gem 'sqlite3'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'ruby-debug19', :require => 'ruby-debug'
+  #gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'database_cleaner'
   gem 'nyan-cat-formatter'
   gem 'capybara'

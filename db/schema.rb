@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(:version => 20130822002853) do
     t.datetime "updated_at",           :null => false
   end
 
-  add_index "moons", ["aliance_id"], :name => "index_moons_on_aliance_id"
+  add_index "moons", ["aliance_id"], :name => "index_moons_on_alliance_id"
   add_index "moons", ["planet_id"], :name => "index_moons_on_planet_id"
   add_index "moons", ["user_id"], :name => "index_moons_on_user_id"
 
@@ -71,7 +71,7 @@ ActiveRecord::Schema.define(:version => 20130822002853) do
     t.datetime "updated_at",           :null => false
   end
 
-  add_index "planets", ["aliance_id"], :name => "index_planets_on_aliance_id"
+  add_index "planets", ["aliance_id"], :name => "index_planets_on_alliance_id"
   add_index "planets", ["star_id"], :name => "index_planets_on_star_id"
   add_index "planets", ["user_id"], :name => "index_planets_on_user_id"
 
