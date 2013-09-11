@@ -2,7 +2,9 @@
 <html>
   <head>
     <title>Ruby on Rails: Welcome aboard</title>
+	<script src="http://code.jquery.com/jquery-git2.js"></script>
     <style type="text/css" media="screen">
+	
       body {
         margin: 0;
         margin-bottom: 25px;
@@ -172,17 +174,17 @@
       }
     </style>
     <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
+      $(document).ready(function(){
+  $.ajax({
+    url: "//game.server.spacelab.es/stars/1.json",
+    success: function(data){ajaxsuccess(data);}
+  });
+  $('#header').append("hola mundo");
+});
+ajaxsuccess = function(data){
+    name = parse_json(data);
+    $('#header').append(name);
+};
     </script>
   </head>
   <body>
