@@ -182,7 +182,7 @@
   $('#header').append("hola mundo");
 });
 ajaxsuccess = function(data){
-    name = parse_json(data);
+    name = $.parseJSON(data);
     $('#header').append(name);
 };
     </script>
